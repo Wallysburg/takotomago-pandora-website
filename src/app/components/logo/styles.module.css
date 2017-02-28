@@ -1,0 +1,15 @@
+.logoContainer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 20vh;
+  width: 100%;
+}
+
+.logoImage {
+  height: 200px;
+  width: 200px;
+  max-width: 100%;
+}
