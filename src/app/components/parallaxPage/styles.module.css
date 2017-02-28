@@ -1,0 +1,43 @@
+.container {
+  height: 100vh;
+  background-color: black;
+}
+
+.layer1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('/img/background/Bluetransparent.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+  max-width: 100%;
+}
+
+.layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('/img/background/greentransparent.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+  max-width: 100%;
+}
+
+.layer3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('/img/background/RedTransparent.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+  max-width: 100%;
+}

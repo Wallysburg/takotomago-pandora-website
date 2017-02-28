@@ -6,5 +6,20 @@
   background-repeat: no-repeat;
   background-position: center; 
   max-width: 100%;
+}
 
+.logoContainer {
+  padding-top: 35vh;
+}
+
+.arrowContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.textContainer {
+  padding-top: 35vh;
+  background-color: rgb(1, 1, 1, 0.2);
+  color: white;
 }
