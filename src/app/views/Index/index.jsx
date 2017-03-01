@@ -31,15 +31,15 @@ const IndexPage = () => (
         </div>
       </div>
       <Pandora/>
-      <div className={styles.pageContainer}>
+      <div className={styles.pageContainer2}>
         <div className={styles.textContainer} >
-         <p>TakoTomago</p>
+         <p>Tako Tomago is an artist based in Los Angeles, California.</p>
          <br/>
-         <p>LA</p>
+         <p>You can listen to his music here.</p>
           <br/>
-         <p>Soundcloud</p>
+         <p>You can read about upcoming releases here.</p>
          <br/>
-         <p>Facebook</p>
+         <p>You can talk to him here.</p>
          <br/>
         </div>
       </div>
