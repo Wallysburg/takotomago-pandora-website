@@ -8,9 +8,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
-    path.join(__dirname, 'src', 'app', 'app-client.js'),
-    'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:8080'
+    path.join(__dirname, 'src', 'app', 'app-client.js')
   ],
   output: {
     path: path.join(__dirname, 'src', 'app', 'static', 'js'),
@@ -30,18 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader'
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
-      },
-      {
-        test: /\.(jpg|png)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[hash].[ext]'
-        }
+        loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
       }
     ]
   },
@@ -55,7 +42,7 @@ module.exports = {
   ],
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('./../css/style.css', { allChunks: true }),
+    new ExtractTextPlugin('./../css/styles.css', { allChunks: true }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) // eslint-disable-line
     }),
