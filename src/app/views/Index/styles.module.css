@@ -10,7 +10,7 @@
 
 .pageContainer2 {
   height: 20vh;
-  background-color: black;
+  background-color: rgb(1, 1, 1, 0.4);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center; 
@@ -30,7 +30,7 @@
 .textContainer {
   text-align: center;
   padding-left: 5vw;
-  padding-top: 2vh;
+  padding-top: 4vh;
   background-color: rgb(1, 1, 1, 0.2);
   color: white;
   font-family: Ariel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
