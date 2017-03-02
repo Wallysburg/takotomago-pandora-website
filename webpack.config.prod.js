@@ -2,8 +2,8 @@ const debug = process.env.NODE_ENV !== 'production'; // eslint-disable-line
 
 const webpack = require('webpack');
 const path = require('path');
-const autoprefixer = require('autoprefixer');
 
+const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
