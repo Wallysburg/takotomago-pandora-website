@@ -36,3 +36,8 @@
   font-family: Ariel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.textContainer a {
+  color:gray;
+  text-decoration: none;
+}
