@@ -32,7 +32,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
+        loader: 'style-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'css-loader',
+        query: {
+          modules: true,
+          localIdentName: '[name]__[local]___[hash:base64:5]'
+        }
       }
     ]
   },
@@ -46,7 +54,9 @@ module.exports = {
   ],
   externals: nodeModules,
   plugins: [
-    new webpack.IgnorePlugin(/\.(css|less)$/),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) // eslint-disable-line
+    }),
     new webpack.BannerPlugin('require("source-map-support").install();',
       { raw: true,
         entryOnly: false })
