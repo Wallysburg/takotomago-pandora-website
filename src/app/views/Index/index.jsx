@@ -30,13 +30,15 @@ const IndexPage = () => (
          <br/>
          <p>You can listen to his music <a href="http://soundcloud.com/takotomago">Here</a>.</p>
           <br/>
-         <p>You can read about upcoming releases <a href="http://soundcloud.com/takotomago">Here</a>.</p>
+         <p><a href="https://www.instagram.com/takotomagomusic/">Instagram</a>.</p>
          <br/>
          <p>Upcoming <a href="http://twitter.com/takotomago">Releases</a>.</p>
          <br/>
          <p>You can talk to him <a href="mailto:takotomago@gmail.com?Subject=Hello">Here</a>.</p>
          <br/>
         </div>
+      </div>
+      <div className={styles.pageContainer3}>
       </div>
     </div>
 
