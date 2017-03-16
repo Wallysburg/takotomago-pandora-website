@@ -7,7 +7,7 @@ const PandoraVideo = () => (
     <div className={styles.background}>
 
         <Iframe iframe = "iframe"
-        src={'https://www.youtube.com/embed/NBayWCQ-apc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1'}
+        src={'https://www.youtube.com/embed/DBojgkka1j8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1'}
         height={'100%'}
         width={'100%'}
         />
