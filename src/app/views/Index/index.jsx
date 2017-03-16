@@ -3,11 +3,19 @@ import styles from './styles.module.css';
 import Logo from './../../components/logo';
 import Arrow from './../../components/arrow';
 
+import Carousel from './../../components/carousel';
 import ParallaxPage from './../../components/parallaxPage';
 import ParallaxScrollLayer from './../../components/react-parallax-utilities/parallax-multiDirectional-layer';
 import ParallaxMouseMove from './../../components/react-parallax-utilities/parallax-mouseMove-layer';
 
 import Pandora from '../Pandora';
+
+const images = [
+  {
+    src: 'img/Logo.png',
+    description: 'Life with Bird collection listing'
+  }
+];
 
 const IndexPage = () => (
     <div>
@@ -37,8 +45,11 @@ const IndexPage = () => (
          <p>You can talk to him <a href="mailto:takotomago@gmail.com?Subject=Hello">Here</a>.</p>
          <br/>
         </div>
-      </div>
+     </div>
       <div className={styles.pageContainer3}>
+        {/*<div className={styles.carouselContainer}>
+        <Carousel images={images} />
+        </div>*/}
       </div>
     </div>
 
